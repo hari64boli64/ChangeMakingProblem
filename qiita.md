@@ -363,7 +363,7 @@ $\overline{p} = a_{k+1}$ ならば $\mathrm{GRE}\_{k+1}(\overline{p}) = 1 < \mat
               & (\because \text{$\overline{p}$未満では種類数減少で非改善})\\
 \Rightarrow {} & \mathrm{GRE}_k(\delta_k) + \mathrm{GRE}_k(\overline{p} - a_{k+1}) \geq \mathrm{GRE}_k(\delta_k) + \mathrm{GRE}_k(\overline{p})\\
 \Rightarrow {} & \mathrm{GRE}_k(\delta_k) + \mathrm{GRE}_k(\overline{p} - a_{k+1}) \geq \mathrm{GRE}_k(\delta_k + \overline{p})\\
-            & (\because \text{帰納法の仮定である $\mathrm{GRE}\_k$ の最適性})\\
+            & (\because \text{帰納法の仮定である $\mathrm{GRE}_k$ の最適性})\\
 \end{align*}
 ```
 
@@ -435,7 +435,7 @@ a_{i+1}= \rho_i a_i - \delta_i \quad (0 \leq \delta_i < a_i)
 
 なので、緩和条件が成立しています。
 
-そして、この条件は、先に示した1, 2, 5ユーロセントの場合にも成立します。実際、
+そして、緩和条件は、先に示した1, 2, 5ユーロセントの場合にも成立します。実際、
 
 ```math
 5 = 3 \times 2 - 1 = \rho_2 \times 2 - \delta_2
@@ -460,7 +460,7 @@ a_{i+1}= \rho_i a_i - \delta_i \quad (0 \leq \delta_i < a_i)
 であり、
 
 ```math
-\mathrm{GRE}_2(2) = 2 \geq 2 = \rho_2
+\mathrm{GRE}_2(2) = 2 \geq \rho_2 = 2
 ```
 
 なので、倍数条件のみならず、緩和条件も満たしません。
@@ -506,7 +506,7 @@ $n=5,$ $a_1=1,$ $a_2=2,$ $a_3=4,$ $a_4=5,$ $a_5=8$ の時、貪欲法は最適�
 であり、
 
 ```math
-\mathrm{GRE}_3(\delta_3=3) = 2 = \rho_3
+\mathrm{GRE}_3(\delta_3=3) =2 \geq \rho_3 = 2
 ```
 
 と、緩和条件を満たしていません。

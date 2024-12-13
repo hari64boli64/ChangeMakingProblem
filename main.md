@@ -328,7 +328,7 @@ $$
               & (\because \text{$\overline{p}$未満では種類数減少で非改善})\\
 \Rightarrow {} & \mathrm{GRE}_k(\delta_k) + \mathrm{GRE}_k(\overline{p} - a_{k+1}) \geq \mathrm{GRE}_k(\delta_k) + \mathrm{GRE}_k(\overline{p})\\
 \Rightarrow {} & \mathrm{GRE}_k(\delta_k) + \mathrm{GRE}_k(\overline{p} - a_{k+1}) \geq \mathrm{GRE}_k(\delta_k + \overline{p})\\
-            & (\because \text{帰納法の仮定である $\mathrm{GRE}\_k$ の最適性})\\
+            & (\because \text{帰納法の仮定である $\mathrm{GRE}_k$ の最適性})\\
 \end{align*}
 $$
 と評価できます。また、$a_{k+1}= \rho_k a_k - \delta_k$ より、$\delta_k + \overline{p} = \rho_k a_k + (\overline{p} - a_{k+1})$ なので、右辺は、
@@ -385,7 +385,7 @@ $$
 $$
 なので、緩和条件が成立しています。
 
-そして、この条件は、先に示した1, 2, 5ユーロセントの場合にも成立します。実際、
+そして、緩和条件は、先に示した1, 2, 5ユーロセントの場合にも成立します。実際、
 $$
 5 = 3 \times 2 - 1 = \rho_2 \times 2 - \delta_2
 $$
@@ -403,7 +403,7 @@ $$
 $$
 であり、
 $$
-\mathrm{GRE}_2(2) = 2 \geq 2 = \rho_2
+\mathrm{GRE}_2(2) = 2 \geq \rho_2 = 2
 $$
 なので、倍数条件のみならず、緩和条件も満たしません。
 
@@ -441,7 +441,7 @@ $$
 $$
 であり、
 $$
-\mathrm{GRE}_3(\delta_3=3) = 2 = \rho_3
+\mathrm{GRE}_3(\delta_3=3) =2 \geq \rho_3 = 2
 $$
 と、緩和条件を満たしていません。
 
