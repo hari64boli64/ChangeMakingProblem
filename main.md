@@ -26,7 +26,7 @@ $$
 
 ここで、「全ての $i \in \lbrace 1, 2, \ldots, n-1 \rbrace$ で $a_{i+1}$ が $a_i$ の倍数」という条件を課します。以下、これを**倍数条件**と呼びます。例えば、現在の日本の硬貨は、5円は1円の倍数、10円は5円の倍数、50円は10円の倍数、……と、確かに倍数条件を満たしています。
 
-倍数条件付きCMPの最適解は、「価値の降順に支払える最大枚数を支払い続ける」という貪欲法で求められることが広く知られています[^s417] [^algoMethod] [^algoLogic]。例えば、123円は100円硬貨1枚、10円硬貨2枚、1円硬貨3枚で支払うのが最適です。しかし、その証明は簡潔なものの厳密に与えるのは容易ではありません。
+倍数条件付きCMPの最適解は、「価値の降順に支払える最大枚数を支払い続ける」という貪欲法で求められることが広く知られ[^s417] [^algoMethod] [^algoLogic]、競プロでも出題があります[^AtCoder]。例えば、123円は100円硬貨1枚、10円硬貨2枚、1円硬貨3枚で支払うのが最適です。しかし、その証明は簡潔なものの厳密に与えるのは容易ではありません。
 
 本記事の前半では、倍数条件付きCMPに対する貪欲法が最適解を与えることについて、証明を複数与えます。証明にあたり多くの着眼点が存在しますが、そのどれであっても証明自体は可能だと示すことが本記事の意義および目的です。ネット上にいくつか類似の記事はありますが、本記事では厳密かつ完全な証明に焦点を当てます。
 
@@ -486,6 +486,8 @@ https://www.mof.go.jp/faq/currency/07af.htm
 [^algoMethod]: アルゴ式. [貪欲法とは](https://algo-method.com/descriptions/95).
 
 [^algoLogic]: アルゴリズムロジック. (2020). [貪欲なアルゴリズム（greedy）入門](https://algo-logic.info/greedy/).
+
+[^AtCoder]: AtCoder. (2021). [Factorial Yen Coin](https://atcoder.jp/contests/abc208/tasks/abc208_b).
 
 [^stackexchange]: Misha Lavrov. (2017). [Proving that greedy coin change algorithm gives optimal solution under certain conditions](https://math.stackexchange.com/questions/2433735/proving-that-greedy-coin-change-algorithm-gives-optimal-solution-under-certain-c).
 
